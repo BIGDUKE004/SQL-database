@@ -159,10 +159,7 @@ WHERE WarehouseID
 IN (SELECT WarehouseID FROM WAREHOUSE WHERE Manager = 'Lucille Smith') 
 GROUP BY WarehouseID;
 
-SELECT INVENTORY.WarehouseID, AVG(INVENTORY.QuantityOnHand) AS AverageQuantityOnHand 
-FROM INVENTORY, WAREHOUSE
-WHERE INVENTORY.WarehouseID = WAREHOUSE.WarehouseID AND WAREHOUSE.Manager = 'Lucille Smith' 
-GROUP BY INVENTORY.WarehouseID;
+
 
 SELECT INVENTORY.WarehouseID, AVG(INVENTORY.QuantityOnHand) AS AverageQuantityOnHand 
 FROM INVENTORY

@@ -98,7 +98,7 @@ SELECT
 FROM trips t
 JOIN drivers d ON t.driver_id = d.driver_id;
 
-
+	
     
 -- No 16
 SELECT 
